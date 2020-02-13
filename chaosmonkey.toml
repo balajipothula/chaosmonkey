@@ -1,0 +1,14 @@
+[chaosmonkey]
+enabled = true
+schedule_enabled = true
+leashed = false
+accounts = ["Prod"]
+
+[database]
+host = "MYSQL_URL"
+name = "chaosmonkey"
+user = "chaosmonkey"
+encrypted_password = "chaosmonkey"
+
+[spinnaker]
+endpoint = "http://SERVER_URL:8084"
