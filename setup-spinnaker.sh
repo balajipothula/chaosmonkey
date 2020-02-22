@@ -41,13 +41,13 @@ hal config version edit --version 1.17.6 --debug
 hal config artifact s3 enable --debug
 
 # configuring s3 storage access.
-hal config storage s3 edit --access-key-id AKIAIULOYAIVQORGY2SQ --secret-access-key lAu1pR82Dys+ZIboZqUKy8wdZz31qP7ISjw5LrAb --region ap-south-1 --debug
+hal config storage s3 edit --access-key-id Your_Access_Key_Id --secret-access-key Your_Secret_Access_Key --region ap-south-1 --debug
 
 # enabling s3 storage.
 hal config storage edit --type s3 --debug
 
 # configuring aws account.
-hal config provider aws account add Prod --account-id 576448550026 --assume-role SpinnakerAmazonEC2FullAccess --debug
+hal config provider aws account add Prod --account-id Your_Account_Id --assume-role SpinnakerAmazonEC2FullAccess --debug
 
 # enabling aws provider.
 hal config provider aws enable --debug
