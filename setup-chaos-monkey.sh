@@ -34,11 +34,11 @@ echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> $HOME/.bash_profile         
 source $HOME/.bash_profile                                                         && \
 echo "export GOROOT=$HOME/go"                    >> $HOME/.bashrc                  && \
 echo "export GOPATH=$HOME/chaosmonkey"           >> $HOME/.bashrc                  && \
-source $HOME/.bash_profile                                                         && \
+source $HOME/.bashrc                                                               && \
 echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> $HOME/.bashrc                  && \
 source $HOME/.bashrc
 
-# exec bash -l
+exec bash
 
 # installing chaos monkey.
 go get github.com/netflix/chaosmonkey/cmd/chaosmonkey
